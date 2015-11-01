@@ -159,15 +159,14 @@ void draw() {
     
   image(enemyImg,enemyX,enemyY);
   image(fighterImg,fighterX,fighterY);
+  fill(255,0,0);
+  rect(5,3,hpW,27);   //hp
   image(hpImg,0,0);
-  image(treasureImg,treasureX,treasureY);   //img
-  
-  fill(255,0,0,150);
-  rect(5,3,hpW,25);   //hp
+  image(treasureImg,treasureX,treasureY);   //img  
 
   //play again
   if(gameState == GAME_OVER){
-    hpW = 200;
+    hpW = 40;
     treasureX = floor(random(0,600));
     treasureY = floor(random(0,450));
     fighterX = 590;
